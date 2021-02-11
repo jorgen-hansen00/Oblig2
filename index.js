@@ -73,12 +73,12 @@ solved++;
 
   /// Rest parameter ///
 
-  /*
+  
 	(function UseRestParameter() {
 		// Add just one rest parameter and use the number of elements in this parameter 
 		// (What is the name of that property?) in the return statement to let the test pass.
 		function foo( a, b, ...theArgs) {
-			return a + b + c; 
+			return a + b + theArgs.length; 
 		}
 
 		// Don't make changes below this line	
@@ -88,7 +88,7 @@ solved++;
 		
 		solved++;
 	})();
-	*/
+
 
   /// Spread operator ///
 
@@ -225,14 +225,11 @@ solved++;
 	})();
 	
 
-  /*
+  
   (function UseParameterDestructuring1() {
     // Adjust the code to let the test succeed.
 
-    const a = {
-		name: 'Oslo',
-		age: 985
-	}
+    const a = ['Oslo', 985]
 
     // Don't make changes below this line
 
@@ -251,7 +248,10 @@ solved++;
   (function UseParameterDestructuring2() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+    const a = {
+		name: 'Oslo',
+		age: 985
+	}
 
     // Don't make changes below this line
 
@@ -264,7 +264,7 @@ solved++;
 
     solved++;
   })();
-*/
+
 
   /// Property shorthand ///
 
