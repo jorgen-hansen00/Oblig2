@@ -133,7 +133,7 @@ solved++;
   
 	(function UseArrow1() {
 		// Rewrite double as arrow function and make the test pass.
-		let double = x => 3 * 2;
+		let double = x => x * 2;
 
 		// Don't make changes below this line	
 		
@@ -166,9 +166,8 @@ solved++;
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// Tip: Spread operator might be needed too.
-		var a = arr[0],
-		    b = arr[2],
-		    c = arr.slice(3); 
+
+		const [a, b, c] = [arr[0], arr[2], arr.slice(3)]
 
 		// Don't make changes below this line	
 		
@@ -207,13 +206,8 @@ solved++;
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		const city = {
-			name: obj.name,
-			age: obj.age,
-			add: obj.add
-		};
 
-		const {name, age, add} = city;
+		const {name, age, add} = obj;
 
 		// Don't make changes below this line	
 		
